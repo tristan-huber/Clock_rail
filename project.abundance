@@ -4,9 +4,55 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1718125148916,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "outter diameter",
+            "ioValue": 10
+        },
+        {
+            "name": "thickness",
+            "ioValue": 10
+        },
+        {
+            "name": "name1",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
-    "allAtoms": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1718131124202,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "outter diameter",
+            "x": 0.013333333333333334,
+            "y": 0.28735632183908044,
+            "uniqueID": 1718131142559,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "thickness",
+            "x": 0.013333333333333334,
+            "y": 0.6827586206896551,
+            "uniqueID": 1718131187460,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "name1",
+            "x": 0.013333333333333334,
+            "y": 0.42298850574712643,
+            "uniqueID": 1718131234964,
+            "ioValues": []
+        }
+    ],
     "allConnectors": [],
     "unitsIndex": 0,
     "fileTypeVersion": 1,
