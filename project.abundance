@@ -7,33 +7,33 @@
     "ioValues": [
         {
             "name": "outter diameter",
+            "ioValue": 452
+        },
+        {
+            "name": "bredth",
             "ioValue": 10
         },
         {
-            "name": "thickness",
-            "ioValue": 10
-        },
-        {
-            "name": "name1",
+            "name": "bredth",
             "ioValue": 10
         }
     ],
     "topLevel": true,
     "allAtoms": [
         {
-            "atomType": "Output",
-            "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
-            "uniqueID": 1718131124202,
-            "ioValues": []
-        },
-        {
             "atomType": "Input",
             "name": "outter diameter",
             "x": 0.013333333333333334,
             "y": 0.28735632183908044,
             "uniqueID": 1718131142559,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "bredth",
+            "x": 0.013333333333333334,
+            "y": 0.42298850574712643,
+            "uniqueID": 1718131234964,
             "ioValues": []
         },
         {
@@ -45,15 +45,107 @@
             "ioValues": []
         },
         {
-            "atomType": "Input",
-            "name": "name1",
-            "x": 0.013333333333333334,
-            "y": 0.42298850574712643,
-            "uniqueID": 1718131234964,
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1718131124202,
             "ioValues": []
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.3026041666666667,
+            "y": 0.21839080459770116,
+            "uniqueID": 1718131261731,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 454
+                }
+            ]
+        },
+        {
+            "atomType": "Constant",
+            "name": "clearance",
+            "x": 0.16354166666666667,
+            "y": 0.13793103448275862,
+            "uniqueID": 1718131269903,
+            "ioValues": []
+        },
+        {
+            "atomType": "Equation",
+            "name": "x + y",
+            "x": 0.21875,
+            "y": 0.735632183908046,
+            "uniqueID": 1718131299774,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 1
+                },
+                {
+                    "name": "y",
+                    "ioValue": 1
+                }
+            ],
+            "currentEquation": "x + y"
+        },
+        {
+            "atomType": "Equation",
+            "name": "x + y",
+            "x": 0.22916666666666669,
+            "y": 0.22298850574712645,
+            "uniqueID": 1718131328556,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 2
+                },
+                {
+                    "name": "y",
+                    "ioValue": 452
+                }
+            ],
+            "currentEquation": "x + y"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.3083333333333333,
+            "y": 0.4988505747126437,
+            "uniqueID": 1718131349149,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 12
+                }
+            ]
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 1718131142559,
+            "ap2ID": 1718131328556
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1718131269903,
+            "ap2ID": 1718131328556
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1718131328556,
+            "ap2ID": 1718131261731
+        }
+    ],
     "unitsIndex": 0,
     "fileTypeVersion": 1,
     "filetypeVersion": 1
